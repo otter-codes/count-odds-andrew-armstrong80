@@ -7,20 +7,11 @@ object Counter extends App {
     counter
   }
 
-  def onlyOdds(numList : List[Int]) : List[Int] = {
+  def onlyOdds(numList : List[Int]) : Int = {
 
     val filtered = numList filter (_ %2 != 0)
 
-
-    filtered
+    filtered.length
   }
-
-  def oddAdder(odds : List[Int]) : Int = {
-
-    val adder = odds.length
-
-    adder
-  }
-
 
 }
