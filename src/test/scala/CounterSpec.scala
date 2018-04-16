@@ -4,24 +4,16 @@ class CounterSpec extends WordSpec with MustMatchers {
 
   "Count" must {
 
-    "return List() when given 0" in {
-      Counter.count(0) mustEqual List()
+    "return 0 when given 0" in {
+      Counter.count(0) mustEqual 0
     }
 
-
-    "return List(0, 1, 2, 3, 4) when given 5" in {
-      Counter.count(5)  mustEqual List(0, 1, 2, 3, 4)
+    "return 4 when given 9" in {
+      Counter.count(9) mustEqual 4
     }
 
-  }
-
-  "onlyOdds" must {
-
-    "return 2 when given List(0, 1, 2, 3, 4)" in {
-      Counter.onlyOdds(List(0, 1, 2, 3, 4))  mustEqual 2
+    "return 2 when given 5" in {
+      Counter.count(5) mustEqual 2
     }
   }
-
-
-
 }
