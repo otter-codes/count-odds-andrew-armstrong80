@@ -1,6 +1,21 @@
-val num = 5
+def count(input: Int): List[Int] = {
+  val counter = {
+    (0 until input).toList
+  }
+  counter
+}
 
-val counter = (0 until num).toList
+def onlyOdds(numList : List[Int]) : List[Int] = {
 
-val odd = (counter: Int) => counter % 2 != 0
+  val filtered = numList filter (_ %2 != 0)
 
+
+  filtered
+}
+
+def oddAdder(odds : List[Int]) : Int = {
+
+  val adder = odds.length
+
+  adder
+}
