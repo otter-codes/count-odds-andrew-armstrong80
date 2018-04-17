@@ -15,5 +15,9 @@ class CounterSpec extends WordSpec with MustMatchers {
     "return 2 when given 5" in {
       Counter.count(5) mustEqual 2
     }
+
+    "return 4 when given 8" in {
+      Counter.count(8) mustEqual 4
+    }
   }
 }
